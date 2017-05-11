@@ -5,5 +5,5 @@ end
 
 get '/posts/:id' do
   @post = Post.find(params[:id])
-  erb :'posts/show'
+  erb :'posts/show', layout: false
 end
