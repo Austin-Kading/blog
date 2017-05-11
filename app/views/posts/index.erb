@@ -1,0 +1,11 @@
+<div class='container'>
+  <h4>Welcome to Beer Blog, blog about your favorite beer!</h4>
+
+  <% @post.each do |one_post| %>
+    <ul>
+      <li>
+        <h3><a href="/posts/<%= one_post.id %>"><%= one_post.title %></a></h3>
+      </li>
+    </ul>
+    <% end %>
+</div>
